@@ -1,6 +1,6 @@
 {
   "name": "@bulatdashiev/svelte-slider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple range slider for Svelte 3",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
