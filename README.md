@@ -1,19 +1,19 @@
 # svelte-slider
 
-Simple svelte range slider component
+Simple svelte range slider component. [demo](https://svelte.dev/repl/e93d43c42b434e3aa3e2a5815f805c75?version=3.22.3)
 
 ## Install
 
 Install with npm or yarn:
 
 ```bash
-TODO
+npm i -D @bulatdashiev/svelte-slider
 ```
 
 Then import `Slider` component to your Svelte app.
 
 ```js
-TODO
+import Slider from '@bulatdashiev/svelte-slider';
 ```
 
 ## Usage
