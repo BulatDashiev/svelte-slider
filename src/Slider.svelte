@@ -1,3 +1,6 @@
+{#if !Array.isArray(value)}
+<input type="number" value={value} name={name[0]} />
+{/if}
 <input type="number" value={value[0]} name={name[0]} />
 {#if range}
   <input type="number" value={value[1]} name={name[1]} />
