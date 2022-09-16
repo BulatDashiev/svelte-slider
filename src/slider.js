@@ -1,7 +1,7 @@
 export default function handle(node) {
   const onDown = getOnDown(node);
 
-  node.addEventListener("touchstart", onDown);
+  node.addEventListener("touchstart", onDown, { passive: true });
   node.addEventListener("mousedown", onDown);
   return {
     destroy() {
@@ -21,8 +21,8 @@ function getOnDown(node) {
     const moveevent = "touches" in e ? "touchmove" : "mousemove";
     const upevent = "touches" in e ? "touchend" : "mouseup";
 
-    document.addEventListener(moveevent, onMove);
-    document.addEventListener(upevent, onUp);
+    document.addEventListener(moveevent, onMove, { passive: true });
+    document.addEventListener(upevent, onUp, { passive: true });
 
     function onUp(e) {
       e.stopPropagation();
